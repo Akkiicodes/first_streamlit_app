@@ -26,3 +26,5 @@ fruityvice_responce = requests.get('https://fruityvice.com/api/fruit/'+'Kiwi')
 #streamlit.text(fruityvice_responce.json())
 fruityvice_normalised = pandas.json_normalize(fruityvice_responce.json())
 streamlit.dataframe(fruityvice_normalised)
+
+import snowfake.connector
